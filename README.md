@@ -8,10 +8,10 @@ It's a very straightforward todo app - tasks can be added/deleted and have both 
 2. settings.txt needs to exist in order to boot. This issue doesn't exist with tasks.txt, I have just simply not gotten around to fixing this ¯\_(ツ)_/¯
 
 ## Project structure
-main.c - Entry point of program, contains main()\
-ui.c - Heavy lifting of the program, handles drawing the interfaces as well as handling most user input\
-todo.c - Functions that manage tasks on a higher level - just add/delete for now\
-file.c - Handles file I/O as well as loading the options/tasks into the program\
+main.c - Entry point of program, contains main()  
+ui.c - Heavy lifting of the program, handles drawing the interfaces as well as handling most user input  
+todo.c - Functions that manage tasks on a higher level - just add/delete for now  
+file.c - Handles file I/O as well as loading the options/tasks into the program  
 
 The header files contain most of the structs/enums, but these are a little disorganized - which I will blame on my being a novice C developer :)
 
