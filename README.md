@@ -12,6 +12,7 @@ main.c - Entry point of program, contains main()
 ui.c - Heavy lifting of the program, handles drawing the interfaces as well as handling most user input  
 todo.c - Functions that manage tasks on a higher level - just add/delete for now  
 file.c - Handles file I/O as well as loading the options/tasks into the program  
+utils.c - Contains wrapper functions for ncurses  
 
 The header files contain most of the structs/enums, but these are a little disorganized - which I will blame on my being a novice C developer :)
 
