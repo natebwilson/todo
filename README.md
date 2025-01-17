@@ -7,7 +7,7 @@ It's a very straightforward todo app - tasks can be added/deleted and have both 
 
 Current issues/limitations include:
 1. Program can only be executed in the project directory. The program saves to two files, tasks.txt and settings.txt, but these are hardcoded to be found in the directory and I will only improve this when I can come up with a portable way to have constant file paths across systems. Since this a toy project and I don't really expect anybody to use this, this is a relatively low priority task for me.
-2. settings.txt needs to exist in order to boot. This issue doesn't exist with tasks.txt, I have just simply not gotten around to fixing this.
+2. ~~settings.txt needs to exist in order to boot. This issue doesn't exist with tasks.txt, I have just simply not gotten around to fixing this.~~
 3. If either settings.txt or tasks.txt is in an improper format, the program will crash. 
 
 ## Project structure
