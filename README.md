@@ -5,7 +5,7 @@ This is the first solo project I've built in C. I was inspired to make this afte
 2. Saving myself (a human) from the pain of incessant escape sequence usage
 It's a very straightforward todo app - tasks can be added/deleted and have both a name and description. There is also an option menu, which currently only allows the user to adjust the size of the different windows in the app, but I am planning to add custom color schemes and maybe some other features if I can think of. Current issues/limitations include:
 1. Program can only be executed in the project directory. The program saves to two files, tasks.txt and settings.txt, but these are hardcoded to be found in the directory and I will only improve this when I can come up with a portable way to have constant file paths across systems. I don't expect anybody to use this - it is simply a toy project.
-2. settings.txt needs to exist in order to boot. This issue doesn't exist with tasks.txt, I have just simply not gotten around to fixing this ¯\_(ツ)_/¯
+2. settings.txt needs to exist in order to boot. This issue doesn't exist with tasks.txt, I have just simply not gotten around to fixing this ¯\\_(ツ)_/¯
 
 ## Project structure
 main.c - Entry point of program, contains main()  
