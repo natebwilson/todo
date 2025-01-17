@@ -1,0 +1,2 @@
+30 : Adjust name column width : 1
+17 : Test setting : 1
