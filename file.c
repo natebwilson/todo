@@ -108,8 +108,16 @@ void saveTasks(){
 
 void loadSettings(Option *optionList, int numOptions){
   FILE *settings = fopen("settings.txt", "r");
-
   int i;
+  //If settings not found
+
+  if(!settings){
+    for(i = 0; i < numOptions; i++){
+      *optionList[i].value = optionDefaults[i];
+    }
+    return;
+  }
+
 
   for(i = 0; i < numOptions; i++){
     fscanf(settings, "%d", optionList[i].value);

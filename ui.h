@@ -12,6 +12,7 @@ typedef struct {
 } Option;
 
 extern Option optionList[20];
+extern int optionDefaults[];
 
 struct programConfig{
   int nameWidth;

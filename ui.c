@@ -7,6 +7,11 @@
 
 Option optionList[20]; //Hardcoded option limit, this makes sense because these aren't user-defined
 
+int optionDefaults[] = {
+  30, //Default name width
+  10, //Default testOption var
+};
+
 struct programConfig C;
 
 
