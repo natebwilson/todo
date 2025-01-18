@@ -25,6 +25,7 @@ void addOption(char *name, int type, int *value){
 int testValue;
 
 void initOptions(){
+  //Options are added to the program here. Make sure to update optionDefaults with the appropriate inital value for safety
   C.optionIndex = 0;
   addOption("Adjust name column width", valued, &C.nameWidth);
   addOption("Test setting", valued, &testValue);
@@ -323,8 +324,10 @@ void run_todo_app(){
         draw_prompt(promptNewTask);
         break;
       case('d'):
-        if(draw_prompt(promptDelTask)) delTask(selected);
-        selected = (selected == T.numTasks) ? selected - 1 : selected;
+        if(draw_prompt(promptDelTask)){
+          delTask(selected);
+          selected = (selected == T.numTasks) ? selected - 1 : selected;
+        }
         break;
       case KEY_UP:
         if(T.numTasks == 0) break;

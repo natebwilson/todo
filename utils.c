@@ -68,6 +68,7 @@ void wcprintw(WINDOW *window, int cury, int curx, attr_t attr, short colorpair, 
 
   //Print and apply attribute
   mvwprintw(window, cury, curx, message);
+  //Need to improve to allow multiline wrapping  
   mvwchgat(window, cury, curx, len, attr, colorpair, NULL);
 }
 
