@@ -1,5 +1,5 @@
 CC = cc
-CFLAGS = -Wall -Wextra -pedantic -std=c99
+CFLAGS = -Wall -Wextra -pedantic 
 LDFLAGS = -lncurses
 
 SRC = main.c ui.c todo.c file.c utils.c

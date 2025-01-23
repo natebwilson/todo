@@ -29,7 +29,7 @@ char *wdynamicGetStr(WINDOW *window){
     } else if (!iscntrl(ch) && ch < 127){
       //Check that we don't overflow buffer
       if(len == size - 1){
-        size *= 2;
+        size += 32;
         buffer = realloc(buffer, size);
       }
 
@@ -71,6 +71,8 @@ void wcprintw(WINDOW *window, int cury, int curx, attr_t attr, short colorpair, 
   //Need to improve to allow multiline wrapping  
   mvwchgat(window, cury, curx, len, attr, colorpair, NULL);
 }
+
+
 
 // void editorSetStatusMessage(const char *fmt, ...){
 //   va_list ap;
